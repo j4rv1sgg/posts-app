@@ -2,6 +2,7 @@ import React, {useContext} from 'react';
 import MyInput from "../components/UI/input/MyInput";
 import MyButton from "../components/UI/button/MyButton";
 import {AuthContext} from "../context";
+import {Link} from "react-router-dom";
 
 const Login = () => {
     const {isAuth, setIsAuth} = useContext(AuthContext)
@@ -10,6 +11,7 @@ const Login = () => {
         event.preventDefault()
         setIsAuth(true)
         localStorage.setItem('auth', 'true')
+
     }
     return (
         <div>

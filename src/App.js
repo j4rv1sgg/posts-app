@@ -4,6 +4,7 @@ import './styles/App.css'
 import Navbar from "./components/UI/Navbar/Navbar";
 import AppRouter from "./components/utils/AppRouter";
 import {AuthContext} from "./context";
+import Login from "./pages/Login";
 
 const App = () => {
     const [isAuth, setIsAuth] = useState(false)
@@ -28,7 +29,9 @@ const App = () => {
                 <Navbar/>
                 <AppRouter/>
             </BrowserRouter>
+
         </AuthContext.Provider>
+
 
     );
 };
